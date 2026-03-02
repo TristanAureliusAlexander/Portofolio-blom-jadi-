@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <meta
+      name="description"
+      content="Frontend Software Engineer portfolio — responsive UI, performance, accessibility, and clean code."
+    />
+
+    <title>Frontend Software Engineer | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Portfolio</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#highlights">Highlights</a>
+            <a class="nav-link" href="#contact">Contact</a>
+
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle theme"
+              aria-pressed="false"
+              data-theme-toggle
+            >
+              <span class="theme-toggle-icon" aria-hidden="true"></span>
+              <span class="theme-toggle-text">Theme</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow reveal" style="--d: 0ms">
+              Frontend • UI Engineering • Performance
+            </div>
+
+            <h1 class="hero-title reveal" style="--d: 90ms">
+              <span class="hero-title-line">Tristan Alexander</span>
+              <span class="hero-title-line hero-title-accent"
+                >Frontend Software Engineer</span
+              >
+            </h1>
+
+
+            <p class="hero-subtitle reveal" style="--d: 160ms">
+              Frontend Software Engineer | React Developer
+            </p>
+
+            <p class="hero-tagline reveal" style="--d: 230ms">
+              I build fast, responsive, and user-focused web experiences.
+            </p>
+
+            <div class="hero-actions reveal" style="--d: 300ms">
+              <a class="btn btn-primary" href="#highlights">
+                View Projects
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="hero-meta reveal" style="--d: 360ms">
+              <div class="meta-pill">
+                <span class="dot" aria-hidden="true"></span>
+                Open to Frontend roles
+              </div>
+              <div class="meta-pill">
+                <span class="dot dot-2" aria-hidden="true"></span>
+                React • Next.js • TypeScript
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" style="--d: 120ms" aria-hidden="true">
+            <div class="glass-card">
+              <div class="glass-header">
+                <div class="traffic">
+                  <span class="t t-1"></span>
+                  <span class="t t-2"></span>
+                  <span class="t t-3"></span>
+                </div>
+                <div class="glass-title">ui.tsx</div>
+              </div>
+
+              <div class="code-lines">
+                <div class="code-line"><span class="k">const</span> app = {</div>
+                <div class="code-line">
+                  &nbsp;&nbsp;speed: <span class="s">"fast"</span>,
+                </div>
+                <div class="code-line">
+                  &nbsp;&nbsp;a11y: <span class="s">"first-class"</span>,
+                </div>
+                <div class="code-line">
+                  &nbsp;&nbsp;ui: <span class="s">"polished"</span>,
+                </div>
+                <div class="code-line">};</div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line">
+                  <span class="k">export</span> <span class="k">default</span>
+                  <span class="fn">Portfolio</span>;
+                </div>
+              </div>
+
+              <div class="spark" aria-hidden="true"></div>
+            </div>
+
+            <div class="floating-badge b-1">Responsive</div>
+            <div class="floating-badge b-2">Accessible</div>
+            <div class="floating-badge b-3">Optimized</div>
+          </div>
+        </div>
+
+        <div class="hero-bg" aria-hidden="true">
+          <div class="grid"></div>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-kicker">
+              UI-focused engineering with a performance and accessibility mindset.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-card reveal" style="--d: 40ms">
+              <p>
+                I’m a <strong>Frontend Software Engineer</strong> who enjoys
+                translating product goals into clean, reliable interfaces. I have
+                a strong foundation in <strong>HTML</strong>,
+                <strong>CSS</strong>, and <strong>JavaScript (ES6+)</strong>, and
+                I build components with a deep respect for semantics, responsive
+                layout systems, and readable code.
+              </p>
+              <p>
+                I’m experienced with <strong>React</strong> and modern UI
+                patterns—component composition, state management, and reusable
+                design systems. I prioritize <strong>accessibility</strong>
+                (semantic HTML, ARIA when needed, keyboard navigation) so
+                experiences work well for every user.
+              </p>
+              <p>
+                I’m performance-aware and detail-oriented: optimizing images,
+                reducing layout shift, trimming unnecessary JavaScript, and
+                measuring results in <strong>Chrome DevTools</strong>. I work
+                comfortably with designers and backend engineers to ship
+                polished, scalable features.
+              </p>
+            </div>
+
+            <div class="about-aside reveal" style="--d: 90ms">
+              <div class="stat-card">
+                <div class="stat-number">Mobile-first</div>
+                <div class="stat-label">Responsive layout and typography</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">A11y-first</div>
+                <div class="stat-label">Keyboard + semantic structure</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">Perf-minded</div>
+                <div class="stat-label">Fast loads and smooth interactions</div>
+              </div>
+
+              <div class="quick-links" aria-label="Quick links">
+                <a class="chip" href="#projects">Featured work</a>
+                <a class="chip" href="#contact">Let’s talk</a>
+                <a class="chip" href="https://github.com/" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-kicker">
+              Clean UI implementation, maintainable components, and measurable performance.
+            </p>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-group reveal" style="--d: 40ms">
+              <h3 class="skill-title">Core</h3>
+
+              <div class="skill" data-skill="90">
+                <div class="skill-row">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="HTML5 proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="88">
+                <div class="skill-row">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="CSS3 proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="85">
+                <div class="skill-row">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div
+                  class="bar"
+                  role="progressbar"
+                  aria-label="JavaScript proficiency"
+                >
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="skill-group reveal" style="--d: 80ms">
+              <h3 class="skill-title">Frameworks & Libraries</h3>
+
+              <div class="skill" data-skill="86">
+                <div class="skill-row">
+                  <span class="skill-name">React</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="React proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="70">
+                <div class="skill-row">
+                  <span class="skill-name">Next.js</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="Next.js proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="78">
+                <div class="skill-row">
+                  <span class="skill-name">Tailwind CSS / Bootstrap</span>
+                  <span class="skill-level">Strong</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="CSS framework proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="skill-group reveal" style="--d: 120ms">
+              <h3 class="skill-title">UI/UX & Design</h3>
+
+              <div class="skill" data-skill="90">
+                <div class="skill-row">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div
+                  class="bar"
+                  role="progressbar"
+                  aria-label="Responsive design proficiency"
+                >
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="88">
+                <div class="skill-row">
+                  <span class="skill-name">Flexbox & Grid</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div
+                  class="bar"
+                  role="progressbar"
+                  aria-label="Flexbox and grid proficiency"
+                >
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="80">
+                <div class="skill-row">
+                  <span class="skill-name">Accessibility (a11y)</span>
+                  <span class="skill-level">Strong</span>
+                </div>
+                <div
+                  class="bar"
+                  role="progressbar"
+                  aria-label="Accessibility proficiency"
+                >
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="65">
+                <div class="skill-row">
+                  <span class="skill-name">Figma basics</span>
+                  <span class="skill-level">Comfortable</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="Figma proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="skill-group reveal" style="--d: 160ms">
+              <h3 class="skill-title">Tools</h3>
+
+              <div class="skill" data-skill="85">
+                <div class="skill-row">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="Git proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="82">
+                <div class="skill-row">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="GitHub proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="78">
+                <div class="skill-row">
+                  <span class="skill-name">Vite / Webpack</span>
+                  <span class="skill-level">Strong</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="Build tooling proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+
+              <div class="skill" data-skill="84">
+                <div class="skill-row">
+                  <span class="skill-name">Chrome DevTools</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="bar" role="progressbar" aria-label="Chrome DevTools proficiency">
+                  <span class="bar-fill"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2 class="section-title">Highlights</h2>
+            <p class="section-kicker">
+              As a fresh graduate, I focus on building strong fundamentals, polished UI, and production-ready habits.
+            </p>
+          </header>
+
+          <div class="projects-grid" aria-label="Highlights">
+            <article class="project-card reveal" style="--d: 40ms">
+              <div class="project-top">
+                <h3 class="project-title">UI Craft & Component Thinking</h3>
+                <p class="project-desc">
+                  I build reusable components with clear structure, consistent spacing, and predictable behavior—ready to scale into a design system.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Design consistency</li>
+                <li>Reusable UI</li>
+                <li>State patterns</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" style="--d: 80ms">
+              <div class="project-top">
+                <h3 class="project-title">Responsive by Default</h3>
+                <p class="project-desc">
+                  Mobile-first layouts using Flexbox/Grid, fluid typography, and careful hierarchy—tested across breakpoints to avoid layout regressions.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Mobile-first</li>
+                <li>Grid systems</li>
+                <li>Layout polish</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" style="--d: 120ms">
+              <div class="project-top">
+                <h3 class="project-title">Accessibility & Semantic HTML</h3>
+                <p class="project-desc">
+                  I prioritize keyboard navigation, semantic structure, and ARIA when needed—so the experience stays usable and inclusive.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Semantic HTML</li>
+                <li>ARIA</li>
+                <li>Keyboard UX</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" style="--d: 160ms">
+              <div class="project-top">
+                <h3 class="project-title">Performance Mindset</h3>
+                <p class="project-desc">
+                  I pay attention to Core Web Vitals basics: reducing layout shift, keeping interactions smooth, and trimming unnecessary work in the browser.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Core Web Vitals</li>
+                <li>DevTools</li>
+                <li>Optimization</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" style="--d: 200ms">
+              <div class="project-top">
+                <h3 class="project-title">Clean Code & Collaboration</h3>
+                <p class="project-desc">
+                  I write readable code, use Git effectively, and collaborate with designers/back-end engineers to ship features that match the intended UX.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Git workflow</li>
+                <li>Code quality</li>
+                <li>Team-friendly</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal" style="--d: 240ms">
+              <div class="project-top">
+                <h3 class="project-title">Growing Fast</h3>
+                <p class="project-desc">
+                  I’m actively improving through consistent practice, feedback, and shipping small UI builds—always refining detail and user experience.
+                </p>
+              </div>
+
+              <ul class="project-tags" aria-label="Focus areas">
+                <li>Learning</li>
+                <li>Iteration</li>
+                <li>Ownership</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="projects-note reveal" style="--d: 280ms">
+            Add real projects as you build them—this section is designed to evolve without changing the overall layout.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-kicker">
+              Want to collaborate or discuss a frontend role? Send a message.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <form class="contact-form reveal" data-contact-form style="--d: 40ms">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@email.com"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project or role..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Send Message
+                  <span class="btn-arrow" aria-hidden="true">→</span>
+                </button>
+
+                <p class="form-hint" aria-live="polite" data-form-status></p>
+              </div>
+            </form>
+
+            <aside class="contact-aside reveal" style="--d: 110ms">
+              <div class="contact-card">
+                <h3 class="contact-title">Find me online</h3>
+
+                <div class="contact-links">
+                  <a
+                    class="contact-link"
+                    href="https://github.com/TristanAureliusAlexander"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span class="icon" aria-hidden="true">⌁</span>
+                    GitHub
+                    <span class="muted">TristanAureliusAlexander</span>
+                  </a>
+
+                  <a
+                    class="contact-link"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                 <span class="icon" aria-hidden="true">in</span>
+                    LinkedIn
+                    <span class="muted">linkedin.com/in/your-handle</span>
+                  </a>
+
+                  <a class="contact-link" href="mailto:you@email.com">
+                    <span class="icon" aria-hidden="true">@</span>
+                    Email
+                    <span class="muted">Morphx.mitnick@gmail.com</span>
+                  </a>
+                </div>
+
+                <div class="contact-foot">
+                  <p class="muted">
+                    open remote to every country
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="footer-mark" aria-hidden="true"></span>
+          <span>© <span data-year></span> Tristan Aurellius Alexander</span>
+        </div>
+
+        <div class="footer-right">
+          <a class="footer-link" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
