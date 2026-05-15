@@ -1,19 +1,7 @@
-/* ==========================================================
-   Portfolio JS
-   - Theme toggle (persisted)
-   - Mobile nav toggle + close on link click/escape/outside
-   - Scroll reveal via IntersectionObserver
-   - Animate skill bars when visible
-   - Header elevation on scroll
-   - Contact form: mailto fallback (no backend required)
-   ========================================================== */
-
 (() => {
   const root = document.documentElement;
 
-  // ---------------------------
-  // Theme (persist user choice)
-  // ---------------------------
+
   const THEME_KEY = "portfolio.theme";
   const themeToggle = document.querySelector("[data-theme-toggle]");
 
@@ -47,9 +35,8 @@
     applyTheme(isLight ? "dark" : "light");
   });
 
-  // ---------------------------
-  // Header elevate on scroll
-  // ---------------------------
+
+
   const header = document.querySelector("[data-elevate-header]");
   const onScroll = () => {
     if (!header) return;
@@ -58,9 +45,7 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // ---------------------------
-  // Mobile nav
-  // ---------------------------
+
   const navToggle = document.querySelector("[data-nav-toggle]");
   const navMenu = document.querySelector("[data-nav-menu]");
   const navLinks = navMenu ? navMenu.querySelectorAll("a.nav-link") : [];
@@ -95,9 +80,7 @@
     if (!clickedInsideMenu && !clickedToggle) setNavOpen(false);
   });
 
-  // ---------------------------
-  // Scroll reveal + skill bars
-  // ---------------------------
+  
   const prefersReducedMotion =
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -144,20 +127,16 @@
     revealEls.forEach((el) => io.observe(el));
     skillEls.forEach((el) => io.observe(el));
   } else {
-    // Fallback
+    
     revealEls.forEach((el) => el.classList.add("is-visible"));
     skillEls.forEach(fillSkill);
   }
 
-  // ---------------------------
-  // Footer year
-  // ---------------------------
+ 
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // ---------------------------
-  // Contact form (mailto fallback)
-  // ---------------------------
+  
   const form = document.querySelector("[data-contact-form]");
   const statusEl = document.querySelector("[data-form-status]");
 
@@ -181,8 +160,9 @@
       return;
     }
 
-    // Change this to your email
-    const to = "you@email.com";
+    
+    const to = "morphx.mitnick@gmail.com";
+    
 
     const subject = encodeURIComponent(`Portfolio contact from ${name}`);
     const body = encodeURIComponent(
@@ -191,10 +171,10 @@
 
     setStatus("Opening your email client…", "ok");
 
-    // mailto: works for static hosting without a backend
+    
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
 
-    // Optional: reset after a small delay
+    
     window.setTimeout(() => {
       form.reset();
       setStatus("Message ready. If your mail client didn't open, copy your message and email me directly.", "info");
